@@ -9,8 +9,35 @@
 #import "ViewController.h"
 #import "JCImageViewerController.h"
 #import "JCImageEntity.h"
+#import "JCImageViewerAnimatorProtocol.h"
 
-@interface ViewController ()
+static int const Count = 3;
+
+@interface ViewAnimatorResponse : NSObject <JCIVAnimatorResponseProtocol>
+
+@property (nonatomic, assign) int index;
+@property (nonatomic, strong) NSArray *dataArray;
+
+@end
+
+@implementation ViewAnimatorResponse
+
+- (int)currentImageIndex {
+    return self.index;
+}
+
+- (UIImageView *)animationImageViewWithIndex:(int)index {
+    UIButton *button = self.dataArray[index];
+    return button.imageView;
+}
+
+@end
+
+@interface ViewController () <JCImageViewerAnimatorProtocol>
+
+@property (nonatomic, strong) ViewAnimatorResponse *animatorResponse;
+
+@property (nonatomic, strong) NSMutableArray *buttons;
 
 @end
 
@@ -20,21 +47,37 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
-    button.backgroundColor = [UIColor redColor];
-    [button addTarget:self action:@selector(onButton) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    self.buttons = [NSMutableArray array];
+    for (int i = 1; i <= Count; i++) {
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 150 * (i-1) + 50, 150, 150)];
+        [button setImage:[UIImage imageNamed:@(i).stringValue] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(onButton:) forControlEvents:UIControlEventTouchUpInside];
+        button.tag = i;
+        [self.view addSubview:button];
+        [self.buttons addObject:button];
+    }
+    
+    self.animatorResponse = [[ViewAnimatorResponse alloc] init];
+    self.animatorResponse.dataArray = self.buttons;
 }
 
-- (void)onButton {
+- (void)onButton:(UIButton *)sender {
+    self.animatorResponse.index = sender.tag - 1;
+    
     NSMutableArray *dataArray = [NSMutableArray array];
-    for (int i = 1; i <= 5; i++) {
+    for (int i = 1; i <= Count; i++) {
         JCImageEntity *entity = [JCImageEntity new];
         entity.name = @(i).stringValue;
         [dataArray addObject:entity];
     }
     JCImageViewerController *viewer = [JCImageViewerController getInstanceWithData:dataArray showIndex:1];
     [self presentViewController:viewer animated:YES completion:nil];
+}
+
+
+#pragma mark - JCImageViewerAnimatorProtocol
+- (id<JCIVAnimatorResponseProtocol>)imageViewerAnimatorResponse {
+    return self.animatorResponse;
 }
 
 @end

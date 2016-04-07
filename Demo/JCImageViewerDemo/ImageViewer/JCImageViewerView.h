@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class JCImageViewerView;
+@class JCImageZoomingView;
 @class JCImageEntity;
 
 @protocol JCImageViewerDataSource <NSObject>
@@ -24,5 +25,6 @@
 @property (nonatomic, assign) int currentIndex;
 
 - (void)showViewWithIndex:(int)showIndex;
+- (JCImageZoomingView *)imageZoomingViewWithIndex:(int)index;
 
 @end
