@@ -70,8 +70,10 @@ static int const Count = 3;
         entity.name = @(i).stringValue;
         [dataArray addObject:entity];
     }
-    JCImageViewerController *viewer = [JCImageViewerController getInstanceWithData:dataArray showIndex:1];
-    [self presentViewController:viewer animated:YES completion:nil];
+    JCImageViewerController *viewer = [JCImageViewerController getInstanceWithData:dataArray showIndex:sender.tag - 1];
+    [self presentViewController:viewer animated:YES completion:^{
+//        [viewer showWithIndex:sender.tag - 1];
+    }];
 }
 
 

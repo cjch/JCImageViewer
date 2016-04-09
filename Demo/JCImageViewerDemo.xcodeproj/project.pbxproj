@@ -13,14 +13,16 @@
 		22506BA11CB60049009993C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22506B9F1CB60049009993C5 /* Main.storyboard */; };
 		22506BA31CB60049009993C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22506BA21CB60049009993C5 /* Assets.xcassets */; };
 		22506BA61CB60049009993C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22506BA41CB60049009993C5 /* LaunchScreen.storyboard */; };
-		2270926A1CB645A60016CE37 /* JCImageViewerAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 227092621CB645A60016CE37 /* JCImageViewerAnimationTransition.m */; };
-		2270926B1CB645A60016CE37 /* JCImageViewerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 227092641CB645A60016CE37 /* JCImageViewerAnimator.m */; };
-		2270926C1CB645A60016CE37 /* UINavigationController+JCImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 227092671CB645A60016CE37 /* UINavigationController+JCImageViewer.m */; };
-		2270926D1CB645A60016CE37 /* UITabBarController+JCImageVIewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 227092691CB645A60016CE37 /* UITabBarController+JCImageVIewer.m */; };
-		229B05DB1CB636FE0067112D /* JCImageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B05D41CB636FE0067112D /* JCImageEntity.m */; };
-		229B05DC1CB636FE0067112D /* JCImageViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B05D61CB636FE0067112D /* JCImageViewerController.m */; };
-		229B05DD1CB636FE0067112D /* JCImageViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B05D81CB636FE0067112D /* JCImageViewerView.m */; };
-		229B05DE1CB636FE0067112D /* JCImageZoomingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B05DA1CB636FE0067112D /* JCImageZoomingView.m */; };
+		F55D55F41CB91E560070362B /* JCImageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55ED1CB91E560070362B /* JCImageEntity.m */; };
+		F55D55F51CB91E560070362B /* JCImageViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55EF1CB91E560070362B /* JCImageViewerController.m */; };
+		F55D55F61CB91E560070362B /* JCImageViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55F11CB91E560070362B /* JCImageViewerView.m */; };
+		F55D55F71CB91E560070362B /* JCImageZoomingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55F31CB91E560070362B /* JCImageZoomingView.m */; };
+		F55D56061CB91E600070362B /* JCImageViewerAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55FA1CB91E5F0070362B /* JCImageViewerAnimationTransition.m */; };
+		F55D56071CB91E600070362B /* JCImageViewerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55FC1CB91E5F0070362B /* JCImageViewerAnimator.m */; };
+		F55D56081CB91E600070362B /* JCIVAnimatorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55FF1CB91E5F0070362B /* JCIVAnimatorResponse.m */; };
+		F55D56091CB91E600070362B /* JCViewerControllerAnimatorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D56011CB91E5F0070362B /* JCViewerControllerAnimatorResponse.m */; };
+		F55D560A1CB91E600070362B /* UINavigationController+JCImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D56031CB91E5F0070362B /* UINavigationController+JCImageViewer.m */; };
+		F55D560B1CB91E600070362B /* UITabBarController+JCImageVIewer.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D56051CB91E600070362B /* UITabBarController+JCImageVIewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,23 +36,27 @@
 		22506BA21CB60049009993C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22506BA51CB60049009993C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22506BA71CB60049009993C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		227092611CB645A60016CE37 /* JCImageViewerAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimationTransition.h; sourceTree = "<group>"; };
-		227092621CB645A60016CE37 /* JCImageViewerAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerAnimationTransition.m; sourceTree = "<group>"; };
-		227092631CB645A60016CE37 /* JCImageViewerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimator.h; sourceTree = "<group>"; };
-		227092641CB645A60016CE37 /* JCImageViewerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerAnimator.m; sourceTree = "<group>"; };
-		227092651CB645A60016CE37 /* JCImageViewerAnimatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimatorProtocol.h; sourceTree = "<group>"; };
-		227092661CB645A60016CE37 /* UINavigationController+JCImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JCImageViewer.h"; sourceTree = "<group>"; };
-		227092671CB645A60016CE37 /* UINavigationController+JCImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JCImageViewer.m"; sourceTree = "<group>"; };
-		227092681CB645A60016CE37 /* UITabBarController+JCImageVIewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+JCImageVIewer.h"; sourceTree = "<group>"; };
-		227092691CB645A60016CE37 /* UITabBarController+JCImageVIewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+JCImageVIewer.m"; sourceTree = "<group>"; };
-		229B05D31CB636FE0067112D /* JCImageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageEntity.h; sourceTree = "<group>"; };
-		229B05D41CB636FE0067112D /* JCImageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageEntity.m; sourceTree = "<group>"; };
-		229B05D51CB636FE0067112D /* JCImageViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerController.h; sourceTree = "<group>"; };
-		229B05D61CB636FE0067112D /* JCImageViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerController.m; sourceTree = "<group>"; };
-		229B05D71CB636FE0067112D /* JCImageViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerView.h; sourceTree = "<group>"; };
-		229B05D81CB636FE0067112D /* JCImageViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerView.m; sourceTree = "<group>"; };
-		229B05D91CB636FE0067112D /* JCImageZoomingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageZoomingView.h; sourceTree = "<group>"; };
-		229B05DA1CB636FE0067112D /* JCImageZoomingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageZoomingView.m; sourceTree = "<group>"; };
+		F55D55EC1CB91E560070362B /* JCImageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageEntity.h; sourceTree = "<group>"; };
+		F55D55ED1CB91E560070362B /* JCImageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageEntity.m; sourceTree = "<group>"; };
+		F55D55EE1CB91E560070362B /* JCImageViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerController.h; sourceTree = "<group>"; };
+		F55D55EF1CB91E560070362B /* JCImageViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerController.m; sourceTree = "<group>"; };
+		F55D55F01CB91E560070362B /* JCImageViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerView.h; sourceTree = "<group>"; };
+		F55D55F11CB91E560070362B /* JCImageViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerView.m; sourceTree = "<group>"; };
+		F55D55F21CB91E560070362B /* JCImageZoomingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageZoomingView.h; sourceTree = "<group>"; };
+		F55D55F31CB91E560070362B /* JCImageZoomingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageZoomingView.m; sourceTree = "<group>"; };
+		F55D55F91CB91E5F0070362B /* JCImageViewerAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimationTransition.h; sourceTree = "<group>"; };
+		F55D55FA1CB91E5F0070362B /* JCImageViewerAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerAnimationTransition.m; sourceTree = "<group>"; };
+		F55D55FB1CB91E5F0070362B /* JCImageViewerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimator.h; sourceTree = "<group>"; };
+		F55D55FC1CB91E5F0070362B /* JCImageViewerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerAnimator.m; sourceTree = "<group>"; };
+		F55D55FD1CB91E5F0070362B /* JCImageViewerAnimatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimatorProtocol.h; sourceTree = "<group>"; };
+		F55D55FE1CB91E5F0070362B /* JCIVAnimatorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCIVAnimatorResponse.h; sourceTree = "<group>"; };
+		F55D55FF1CB91E5F0070362B /* JCIVAnimatorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIVAnimatorResponse.m; sourceTree = "<group>"; };
+		F55D56001CB91E5F0070362B /* JCViewerControllerAnimatorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCViewerControllerAnimatorResponse.h; sourceTree = "<group>"; };
+		F55D56011CB91E5F0070362B /* JCViewerControllerAnimatorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCViewerControllerAnimatorResponse.m; sourceTree = "<group>"; };
+		F55D56021CB91E5F0070362B /* UINavigationController+JCImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JCImageViewer.h"; sourceTree = "<group>"; };
+		F55D56031CB91E5F0070362B /* UINavigationController+JCImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JCImageViewer.m"; sourceTree = "<group>"; };
+		F55D56041CB91E600070362B /* UITabBarController+JCImageVIewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+JCImageVIewer.h"; sourceTree = "<group>"; };
+		F55D56051CB91E600070362B /* UITabBarController+JCImageVIewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+JCImageVIewer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,8 @@
 		22506B951CB60049009993C5 /* JCImageViewerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				229B05D21CB636FE0067112D /* ImageViewer */,
-				227092601CB645A60016CE37 /* ImageViewerAnimator */,
+				F55D55F81CB91E5F0070362B /* ImageViewerAnimator */,
+				F55D55EB1CB91E560070362B /* ImageViewer */,
 				22506B991CB60049009993C5 /* AppDelegate.h */,
 				22506B9A1CB60049009993C5 /* AppDelegate.m */,
 				22506B9C1CB60049009993C5 /* ViewController.h */,
@@ -106,35 +112,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		227092601CB645A60016CE37 /* ImageViewerAnimator */ = {
+		F55D55EB1CB91E560070362B /* ImageViewer */ = {
 			isa = PBXGroup;
 			children = (
-				227092611CB645A60016CE37 /* JCImageViewerAnimationTransition.h */,
-				227092621CB645A60016CE37 /* JCImageViewerAnimationTransition.m */,
-				227092631CB645A60016CE37 /* JCImageViewerAnimator.h */,
-				227092641CB645A60016CE37 /* JCImageViewerAnimator.m */,
-				227092651CB645A60016CE37 /* JCImageViewerAnimatorProtocol.h */,
-				227092661CB645A60016CE37 /* UINavigationController+JCImageViewer.h */,
-				227092671CB645A60016CE37 /* UINavigationController+JCImageViewer.m */,
-				227092681CB645A60016CE37 /* UITabBarController+JCImageVIewer.h */,
-				227092691CB645A60016CE37 /* UITabBarController+JCImageVIewer.m */,
-			);
-			path = ImageViewerAnimator;
-			sourceTree = "<group>";
-		};
-		229B05D21CB636FE0067112D /* ImageViewer */ = {
-			isa = PBXGroup;
-			children = (
-				229B05D31CB636FE0067112D /* JCImageEntity.h */,
-				229B05D41CB636FE0067112D /* JCImageEntity.m */,
-				229B05D51CB636FE0067112D /* JCImageViewerController.h */,
-				229B05D61CB636FE0067112D /* JCImageViewerController.m */,
-				229B05D71CB636FE0067112D /* JCImageViewerView.h */,
-				229B05D81CB636FE0067112D /* JCImageViewerView.m */,
-				229B05D91CB636FE0067112D /* JCImageZoomingView.h */,
-				229B05DA1CB636FE0067112D /* JCImageZoomingView.m */,
+				F55D55EC1CB91E560070362B /* JCImageEntity.h */,
+				F55D55ED1CB91E560070362B /* JCImageEntity.m */,
+				F55D55EE1CB91E560070362B /* JCImageViewerController.h */,
+				F55D55EF1CB91E560070362B /* JCImageViewerController.m */,
+				F55D55F01CB91E560070362B /* JCImageViewerView.h */,
+				F55D55F11CB91E560070362B /* JCImageViewerView.m */,
+				F55D55F21CB91E560070362B /* JCImageZoomingView.h */,
+				F55D55F31CB91E560070362B /* JCImageZoomingView.m */,
 			);
 			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		F55D55F81CB91E5F0070362B /* ImageViewerAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				F55D55F91CB91E5F0070362B /* JCImageViewerAnimationTransition.h */,
+				F55D55FA1CB91E5F0070362B /* JCImageViewerAnimationTransition.m */,
+				F55D55FB1CB91E5F0070362B /* JCImageViewerAnimator.h */,
+				F55D55FC1CB91E5F0070362B /* JCImageViewerAnimator.m */,
+				F55D55FD1CB91E5F0070362B /* JCImageViewerAnimatorProtocol.h */,
+				F55D55FE1CB91E5F0070362B /* JCIVAnimatorResponse.h */,
+				F55D55FF1CB91E5F0070362B /* JCIVAnimatorResponse.m */,
+				F55D56001CB91E5F0070362B /* JCViewerControllerAnimatorResponse.h */,
+				F55D56011CB91E5F0070362B /* JCViewerControllerAnimatorResponse.m */,
+				F55D56021CB91E5F0070362B /* UINavigationController+JCImageViewer.h */,
+				F55D56031CB91E5F0070362B /* UINavigationController+JCImageViewer.m */,
+				F55D56041CB91E600070362B /* UITabBarController+JCImageVIewer.h */,
+				F55D56051CB91E600070362B /* UITabBarController+JCImageVIewer.m */,
+			);
+			path = ImageViewerAnimator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,17 +217,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2270926D1CB645A60016CE37 /* UITabBarController+JCImageVIewer.m in Sources */,
+				F55D560A1CB91E600070362B /* UINavigationController+JCImageViewer.m in Sources */,
 				22506B9E1CB60049009993C5 /* ViewController.m in Sources */,
-				229B05DE1CB636FE0067112D /* JCImageZoomingView.m in Sources */,
-				2270926A1CB645A60016CE37 /* JCImageViewerAnimationTransition.m in Sources */,
+				F55D55F71CB91E560070362B /* JCImageZoomingView.m in Sources */,
+				F55D56061CB91E600070362B /* JCImageViewerAnimationTransition.m in Sources */,
 				22506B9B1CB60049009993C5 /* AppDelegate.m in Sources */,
-				2270926B1CB645A60016CE37 /* JCImageViewerAnimator.m in Sources */,
+				F55D56071CB91E600070362B /* JCImageViewerAnimator.m in Sources */,
 				22506B981CB60049009993C5 /* main.m in Sources */,
-				2270926C1CB645A60016CE37 /* UINavigationController+JCImageViewer.m in Sources */,
-				229B05DB1CB636FE0067112D /* JCImageEntity.m in Sources */,
-				229B05DC1CB636FE0067112D /* JCImageViewerController.m in Sources */,
-				229B05DD1CB636FE0067112D /* JCImageViewerView.m in Sources */,
+				F55D55F41CB91E560070362B /* JCImageEntity.m in Sources */,
+				F55D560B1CB91E600070362B /* UITabBarController+JCImageVIewer.m in Sources */,
+				F55D56081CB91E600070362B /* JCIVAnimatorResponse.m in Sources */,
+				F55D56091CB91E600070362B /* JCViewerControllerAnimatorResponse.m in Sources */,
+				F55D55F51CB91E560070362B /* JCImageViewerController.m in Sources */,
+				F55D55F61CB91E560070362B /* JCImageViewerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

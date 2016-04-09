@@ -9,34 +9,9 @@
 #import "JCImageViewerController.h"
 #import "JCImageViewerView.h"
 #import "JCImageZoomingView.h"
-#import "JCImageViewerAnimatorProtocol.h"
 #import "JCImageViewerAnimator.h"
-
-@interface ViewerAnimatorResponse : NSObject <JCIVAnimatorResponseProtocol>
-
-@property (nonatomic, weak) JCImageViewerView *viewer;
-@property (nonatomic, weak) UIImageView *defaultView;
-
-@end
-
-@implementation ViewerAnimatorResponse
-
-- (int)currentImageIndex {
-    return self.viewer.currentIndex;
-}
-
-- (UIImageView *)animationImageViewWithIndex:(int)index {
-    JCImageZoomingView *currentPage = [self.viewer imageZoomingViewWithIndex:index];
-    UIImageView *resView = currentPage.imageView;
-    if (resView == nil) {
-        resView = self.defaultView;
-    }
-    return resView;
-}
-
-
-@end
-
+#import "JCImageViewerAnimatorProtocol.h"
+#import "JCViewerControllerAnimatorResponse.h"
 
 @interface JCImageViewerController () <JCImageViewerDataSource, JCImageViewerAnimatorProtocol>
 
@@ -44,7 +19,7 @@
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, assign) int defalultShowIndex;
 
-@property (nonatomic, strong) ViewerAnimatorResponse *response;
+@property (nonatomic, strong) JCViewerControllerAnimatorResponse *animatorResponse;
 
 @end
 
@@ -62,15 +37,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.viewer];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [self.view insertSubview:imageView belowSubview:self.viewer];
+    
+    _animatorResponse = [JCViewerControllerAnimatorResponse new];
+    _animatorResponse.defaultView = imageView;
+    _animatorResponse.viewer = self.viewer;
+    
     [self.viewer showViewWithIndex:self.defalultShowIndex];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlePan) name:JCImageViewerTapNotification object:nil];
-    
-    _response = [ViewerAnimatorResponse new];
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    [self.view insertSubview:imageView belowSubview:self.viewer];
-    _response.defaultView = imageView;
-    _response.viewer = self.viewer;
+}
+
+- (void)showWithIndex:(int)index {
+    [self.viewer showViewWithIndex:index];
 }
 
 - (void)handlePan {
@@ -91,12 +71,12 @@
     return entity;
 }
 
-#pragma mark - JCIVAnimatorResponseProtocol
+#pragma mark - JCImageViewerAnimatorProtocol
 - (id<JCIVAnimatorResponseProtocol>)imageViewerAnimatorResponse {
-    return self.response;
+    return self.animatorResponse;
 }
 
-#pragma mark
+#pragma mark - getter
 - (JCImageViewerView *)viewer {
     if (!_viewer) {
         _viewer = [[JCImageViewerView alloc] initWithFrame:self.view.bounds];

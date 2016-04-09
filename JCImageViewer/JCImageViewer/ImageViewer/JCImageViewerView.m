@@ -57,6 +57,11 @@
     self.contentOffset = CGPointMake(self.frame.size.width * self.currentIndex, 0);
 }
 
+- (UIImageView *)imageViewWithIndex:(int)index {
+    JCImageZoomingView *zView = [self imageZoomingViewWithIndex:index];
+    return zView.imageView;
+}
+
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     int page = (scrollView.contentOffset.x + 20) / self.frame.size.width;

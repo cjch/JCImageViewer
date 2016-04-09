@@ -24,5 +24,6 @@
 @property (nonatomic, assign) int currentIndex;
 
 - (void)showViewWithIndex:(int)showIndex;
+- (UIImageView *)imageViewWithIndex:(int)index;
 
 @end

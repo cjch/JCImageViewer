@@ -26,6 +26,10 @@
 		2270925B1CB63E8A0016CE37 /* UINavigationController+JCImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 227092591CB63E8A0016CE37 /* UINavigationController+JCImageViewer.m */; };
 		2270925E1CB642050016CE37 /* UITabBarController+JCImageVIewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2270925C1CB642050016CE37 /* UITabBarController+JCImageVIewer.h */; };
 		2270925F1CB642050016CE37 /* UITabBarController+JCImageVIewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270925D1CB642050016CE37 /* UITabBarController+JCImageVIewer.m */; };
+		F55D55E51CB918590070362B /* JCIVAnimatorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F55D55E31CB918590070362B /* JCIVAnimatorResponse.h */; };
+		F55D55E61CB918590070362B /* JCIVAnimatorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55E41CB918590070362B /* JCIVAnimatorResponse.m */; };
+		F55D55E91CB919C40070362B /* JCViewerControllerAnimatorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F55D55E71CB919C40070362B /* JCViewerControllerAnimatorResponse.h */; };
+		F55D55EA1CB919C40070362B /* JCViewerControllerAnimatorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55E81CB919C40070362B /* JCViewerControllerAnimatorResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		227092591CB63E8A0016CE37 /* UINavigationController+JCImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JCImageViewer.m"; sourceTree = "<group>"; };
 		2270925C1CB642050016CE37 /* UITabBarController+JCImageVIewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+JCImageVIewer.h"; sourceTree = "<group>"; };
 		2270925D1CB642050016CE37 /* UITabBarController+JCImageVIewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+JCImageVIewer.m"; sourceTree = "<group>"; };
+		F55D55E31CB918590070362B /* JCIVAnimatorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCIVAnimatorResponse.h; sourceTree = "<group>"; };
+		F55D55E41CB918590070362B /* JCIVAnimatorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIVAnimatorResponse.m; sourceTree = "<group>"; };
+		F55D55E71CB919C40070362B /* JCViewerControllerAnimatorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCViewerControllerAnimatorResponse.h; sourceTree = "<group>"; };
+		F55D55E81CB919C40070362B /* JCViewerControllerAnimatorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCViewerControllerAnimatorResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,10 @@
 				227092591CB63E8A0016CE37 /* UINavigationController+JCImageViewer.m */,
 				2270925C1CB642050016CE37 /* UITabBarController+JCImageVIewer.h */,
 				2270925D1CB642050016CE37 /* UITabBarController+JCImageVIewer.m */,
+				F55D55E31CB918590070362B /* JCIVAnimatorResponse.h */,
+				F55D55E41CB918590070362B /* JCIVAnimatorResponse.m */,
+				F55D55E71CB919C40070362B /* JCViewerControllerAnimatorResponse.h */,
+				F55D55E81CB919C40070362B /* JCViewerControllerAnimatorResponse.m */,
 			);
 			path = ImageViewerAnimator;
 			sourceTree = "<group>";
@@ -130,7 +142,9 @@
 				227092501CB639E10016CE37 /* JCImageViewerAnimator.h in Headers */,
 				2270925E1CB642050016CE37 /* UITabBarController+JCImageVIewer.h in Headers */,
 				227092541CB63A020016CE37 /* JCImageViewerAnimationTransition.h in Headers */,
+				F55D55E91CB919C40070362B /* JCViewerControllerAnimatorResponse.h in Headers */,
 				22506BCE1CB605BC009993C5 /* JCImageZoomingView.h in Headers */,
+				F55D55E51CB918590070362B /* JCIVAnimatorResponse.h in Headers */,
 				22506BBC1CB604A3009993C5 /* JCImageViewer.h in Headers */,
 				22506BC61CB60553009993C5 /* JCImageViewerController.h in Headers */,
 				2270925A1CB63E8A0016CE37 /* UINavigationController+JCImageViewer.h in Headers */,
@@ -210,9 +224,11 @@
 			files = (
 				2270925F1CB642050016CE37 /* UITabBarController+JCImageVIewer.m in Sources */,
 				227092551CB63A020016CE37 /* JCImageViewerAnimationTransition.m in Sources */,
+				F55D55EA1CB919C40070362B /* JCViewerControllerAnimatorResponse.m in Sources */,
 				22506BC71CB60553009993C5 /* JCImageViewerController.m in Sources */,
 				22506BCF1CB605BC009993C5 /* JCImageZoomingView.m in Sources */,
 				22506BCB1CB60590009993C5 /* JCImageViewerView.m in Sources */,
+				F55D55E61CB918590070362B /* JCIVAnimatorResponse.m in Sources */,
 				2270925B1CB63E8A0016CE37 /* UINavigationController+JCImageViewer.m in Sources */,
 				22506BD31CB605DE009993C5 /* JCImageEntity.m in Sources */,
 				227092511CB639E10016CE37 /* JCImageViewerAnimator.m in Sources */,

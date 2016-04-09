@@ -18,6 +18,8 @@
 @property (nonatomic, strong) JCImageEntity *entity;
 @property (nonatomic, assign) int index;
 
+@property (nonatomic, strong, readonly) UIImageView *imageView;
+
 - (void)clearView;
 
 @end
