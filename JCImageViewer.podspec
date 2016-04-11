@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                    DESC
     s.homepage     = "https://github.com/cjch/JCImageViewer"
     s.license      = 'MIT (LICENSE)'
-    s.author       = { "billwang1990" => "billwang1990@gmail.com" }
+    s.author       = { "cjch" => "350765427@qq.com" }
     s.platform     = :ios, '7.0'
     s.source       = { :git => "https://github.com/cjch/JCImageViewer.git", :tag => s.version.to_s }
     s.source_files  = 'JCImageViewer/JCImageViewer/**/*.{h,m}'
