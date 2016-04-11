@@ -12,6 +12,4 @@
 
 + (instancetype)getInstanceWithData:(NSArray *)dataArray showIndex:(int)index;
 
-- (void)showWithIndex:(int)index;
-
 @end

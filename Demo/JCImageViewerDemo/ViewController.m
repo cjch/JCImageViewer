@@ -27,8 +27,8 @@ static int const Count = 3;
 }
 
 - (UIImageView *)animationImageViewWithIndex:(int)index {
-    UIButton *button = self.dataArray[index];
-    return button.imageView;
+    UIImageView *iv = self.dataArray[index];
+    return iv;
 }
 
 @end
@@ -37,7 +37,7 @@ static int const Count = 3;
 
 @property (nonatomic, strong) ViewAnimatorResponse *animatorResponse;
 
-@property (nonatomic, strong) NSMutableArray *buttons;
+@property (nonatomic, strong) NSMutableArray *imageViews;
 
 @end
 
@@ -47,18 +47,23 @@ static int const Count = 3;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.buttons = [NSMutableArray array];
+    self.imageViews = [NSMutableArray array];
     for (int i = 1; i <= Count; i++) {
-        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 150 * (i-1) + 50, 150, 150)];
-        [button setImage:[UIImage imageNamed:@(i).stringValue] forState:UIControlStateNormal];
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(50, 170 * (i-1) + 50, 150, 150)];
         [button addTarget:self action:@selector(onButton:) forControlEvents:UIControlEventTouchUpInside];
         button.tag = i;
+        
+        UIImageView *iv = [[UIImageView alloc] initWithFrame:button.frame];
+        iv.image = [UIImage imageNamed:@(i).stringValue];
+        iv.contentMode = UIViewContentModeScaleAspectFit;
+        
         [self.view addSubview:button];
-        [self.buttons addObject:button];
+        [self.view addSubview:iv];
+        [self.imageViews addObject:iv];
     }
     
     self.animatorResponse = [[ViewAnimatorResponse alloc] init];
-    self.animatorResponse.dataArray = self.buttons;
+    self.animatorResponse.dataArray = self.imageViews;
 }
 
 - (void)onButton:(UIButton *)sender {

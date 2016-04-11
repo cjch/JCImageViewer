@@ -22,7 +22,7 @@
     NSAssert([fromVC conformsToProtocol:@protocol(JCImageViewerAnimatorProtocol)] && [toVC conformsToProtocol:@protocol(JCImageViewerAnimatorProtocol)], @"fromVC 和 toVC必须遵循协议 ImageViewerResponseProtocol");
     
     UIView *containerView = [transitionContext containerView];
-    UIView *fromView = fromVC.view;
+    //UIView *fromView = fromVC.view;
     UIView *toView = toVC.view;
     [containerView addSubview:toView];
     

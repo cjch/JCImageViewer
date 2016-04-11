@@ -49,10 +49,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlePan) name:JCImageViewerTapNotification object:nil];
 }
 
-- (void)showWithIndex:(int)index {
-    [self.viewer showViewWithIndex:index];
-}
-
 - (void)handlePan {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

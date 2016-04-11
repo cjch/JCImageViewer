@@ -13,19 +13,11 @@
 		22506BA11CB60049009993C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22506B9F1CB60049009993C5 /* Main.storyboard */; };
 		22506BA31CB60049009993C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22506BA21CB60049009993C5 /* Assets.xcassets */; };
 		22506BA61CB60049009993C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22506BA41CB60049009993C5 /* LaunchScreen.storyboard */; };
-		F55D55F41CB91E560070362B /* JCImageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55ED1CB91E560070362B /* JCImageEntity.m */; };
-		F55D55F51CB91E560070362B /* JCImageViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55EF1CB91E560070362B /* JCImageViewerController.m */; };
-		F55D55F61CB91E560070362B /* JCImageViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55F11CB91E560070362B /* JCImageViewerView.m */; };
-		F55D55F71CB91E560070362B /* JCImageZoomingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55F31CB91E560070362B /* JCImageZoomingView.m */; };
-		F55D56061CB91E600070362B /* JCImageViewerAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55FA1CB91E5F0070362B /* JCImageViewerAnimationTransition.m */; };
-		F55D56071CB91E600070362B /* JCImageViewerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55FC1CB91E5F0070362B /* JCImageViewerAnimator.m */; };
-		F55D56081CB91E600070362B /* JCIVAnimatorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D55FF1CB91E5F0070362B /* JCIVAnimatorResponse.m */; };
-		F55D56091CB91E600070362B /* JCViewerControllerAnimatorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D56011CB91E5F0070362B /* JCViewerControllerAnimatorResponse.m */; };
-		F55D560A1CB91E600070362B /* UINavigationController+JCImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D56031CB91E5F0070362B /* UINavigationController+JCImageViewer.m */; };
-		F55D560B1CB91E600070362B /* UITabBarController+JCImageVIewer.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D56051CB91E600070362B /* UITabBarController+JCImageVIewer.m */; };
+		897540D9A25D147B29B57466 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D2741485ED6B76DD00A7F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		025D2741485ED6B76DD00A7F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22506B931CB60049009993C5 /* JCImageViewerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCImageViewerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22506B971CB60049009993C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22506B991CB60049009993C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,27 +28,8 @@
 		22506BA21CB60049009993C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22506BA51CB60049009993C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22506BA71CB60049009993C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F55D55EC1CB91E560070362B /* JCImageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageEntity.h; sourceTree = "<group>"; };
-		F55D55ED1CB91E560070362B /* JCImageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageEntity.m; sourceTree = "<group>"; };
-		F55D55EE1CB91E560070362B /* JCImageViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerController.h; sourceTree = "<group>"; };
-		F55D55EF1CB91E560070362B /* JCImageViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerController.m; sourceTree = "<group>"; };
-		F55D55F01CB91E560070362B /* JCImageViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerView.h; sourceTree = "<group>"; };
-		F55D55F11CB91E560070362B /* JCImageViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerView.m; sourceTree = "<group>"; };
-		F55D55F21CB91E560070362B /* JCImageZoomingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageZoomingView.h; sourceTree = "<group>"; };
-		F55D55F31CB91E560070362B /* JCImageZoomingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageZoomingView.m; sourceTree = "<group>"; };
-		F55D55F91CB91E5F0070362B /* JCImageViewerAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimationTransition.h; sourceTree = "<group>"; };
-		F55D55FA1CB91E5F0070362B /* JCImageViewerAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerAnimationTransition.m; sourceTree = "<group>"; };
-		F55D55FB1CB91E5F0070362B /* JCImageViewerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimator.h; sourceTree = "<group>"; };
-		F55D55FC1CB91E5F0070362B /* JCImageViewerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageViewerAnimator.m; sourceTree = "<group>"; };
-		F55D55FD1CB91E5F0070362B /* JCImageViewerAnimatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageViewerAnimatorProtocol.h; sourceTree = "<group>"; };
-		F55D55FE1CB91E5F0070362B /* JCIVAnimatorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCIVAnimatorResponse.h; sourceTree = "<group>"; };
-		F55D55FF1CB91E5F0070362B /* JCIVAnimatorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCIVAnimatorResponse.m; sourceTree = "<group>"; };
-		F55D56001CB91E5F0070362B /* JCViewerControllerAnimatorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCViewerControllerAnimatorResponse.h; sourceTree = "<group>"; };
-		F55D56011CB91E5F0070362B /* JCViewerControllerAnimatorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCViewerControllerAnimatorResponse.m; sourceTree = "<group>"; };
-		F55D56021CB91E5F0070362B /* UINavigationController+JCImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JCImageViewer.h"; sourceTree = "<group>"; };
-		F55D56031CB91E5F0070362B /* UINavigationController+JCImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JCImageViewer.m"; sourceTree = "<group>"; };
-		F55D56041CB91E600070362B /* UITabBarController+JCImageVIewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+JCImageVIewer.h"; sourceTree = "<group>"; };
-		F55D56051CB91E600070362B /* UITabBarController+JCImageVIewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+JCImageVIewer.m"; sourceTree = "<group>"; };
+		D93E822180019BAD3D7D490C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FA2D484340EBD4C5CBC4CD87 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897540D9A25D147B29B57466 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +49,8 @@
 			children = (
 				22506B951CB60049009993C5 /* JCImageViewerDemo */,
 				22506B941CB60049009993C5 /* Products */,
+				65D4FF22FDE589A79A436CF6 /* Pods */,
+				4C3FF6E3AB7C7F017FFC9F20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,8 +65,6 @@
 		22506B951CB60049009993C5 /* JCImageViewerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F55D55F81CB91E5F0070362B /* ImageViewerAnimator */,
-				F55D55EB1CB91E560070362B /* ImageViewer */,
 				22506B991CB60049009993C5 /* AppDelegate.h */,
 				22506B9A1CB60049009993C5 /* AppDelegate.m */,
 				22506B9C1CB60049009993C5 /* ViewController.h */,
@@ -112,39 +86,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F55D55EB1CB91E560070362B /* ImageViewer */ = {
+		4C3FF6E3AB7C7F017FFC9F20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F55D55EC1CB91E560070362B /* JCImageEntity.h */,
-				F55D55ED1CB91E560070362B /* JCImageEntity.m */,
-				F55D55EE1CB91E560070362B /* JCImageViewerController.h */,
-				F55D55EF1CB91E560070362B /* JCImageViewerController.m */,
-				F55D55F01CB91E560070362B /* JCImageViewerView.h */,
-				F55D55F11CB91E560070362B /* JCImageViewerView.m */,
-				F55D55F21CB91E560070362B /* JCImageZoomingView.h */,
-				F55D55F31CB91E560070362B /* JCImageZoomingView.m */,
+				025D2741485ED6B76DD00A7F /* libPods.a */,
 			);
-			path = ImageViewer;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F55D55F81CB91E5F0070362B /* ImageViewerAnimator */ = {
+		65D4FF22FDE589A79A436CF6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F55D55F91CB91E5F0070362B /* JCImageViewerAnimationTransition.h */,
-				F55D55FA1CB91E5F0070362B /* JCImageViewerAnimationTransition.m */,
-				F55D55FB1CB91E5F0070362B /* JCImageViewerAnimator.h */,
-				F55D55FC1CB91E5F0070362B /* JCImageViewerAnimator.m */,
-				F55D55FD1CB91E5F0070362B /* JCImageViewerAnimatorProtocol.h */,
-				F55D55FE1CB91E5F0070362B /* JCIVAnimatorResponse.h */,
-				F55D55FF1CB91E5F0070362B /* JCIVAnimatorResponse.m */,
-				F55D56001CB91E5F0070362B /* JCViewerControllerAnimatorResponse.h */,
-				F55D56011CB91E5F0070362B /* JCViewerControllerAnimatorResponse.m */,
-				F55D56021CB91E5F0070362B /* UINavigationController+JCImageViewer.h */,
-				F55D56031CB91E5F0070362B /* UINavigationController+JCImageViewer.m */,
-				F55D56041CB91E600070362B /* UITabBarController+JCImageVIewer.h */,
-				F55D56051CB91E600070362B /* UITabBarController+JCImageVIewer.m */,
+				FA2D484340EBD4C5CBC4CD87 /* Pods.debug.xcconfig */,
+				D93E822180019BAD3D7D490C /* Pods.release.xcconfig */,
 			);
-			path = ImageViewerAnimator;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22506BAA1CB60049009993C5 /* Build configuration list for PBXNativeTarget "JCImageViewerDemo" */;
 			buildPhases = (
+				B123318D92532375ABE3D18D /* Check Pods Manifest.lock */,
 				22506B8F1CB60049009993C5 /* Sources */,
 				22506B901CB60049009993C5 /* Frameworks */,
 				22506B911CB60049009993C5 /* Resources */,
+				57097732C19BB2F81450169A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,24 +170,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57097732C19BB2F81450169A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B123318D92532375ABE3D18D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22506B8F1CB60049009993C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F55D560A1CB91E600070362B /* UINavigationController+JCImageViewer.m in Sources */,
 				22506B9E1CB60049009993C5 /* ViewController.m in Sources */,
-				F55D55F71CB91E560070362B /* JCImageZoomingView.m in Sources */,
-				F55D56061CB91E600070362B /* JCImageViewerAnimationTransition.m in Sources */,
 				22506B9B1CB60049009993C5 /* AppDelegate.m in Sources */,
-				F55D56071CB91E600070362B /* JCImageViewerAnimator.m in Sources */,
 				22506B981CB60049009993C5 /* main.m in Sources */,
-				F55D55F41CB91E560070362B /* JCImageEntity.m in Sources */,
-				F55D560B1CB91E600070362B /* UITabBarController+JCImageVIewer.m in Sources */,
-				F55D56081CB91E600070362B /* JCIVAnimatorResponse.m in Sources */,
-				F55D56091CB91E600070362B /* JCViewerControllerAnimatorResponse.m in Sources */,
-				F55D55F51CB91E560070362B /* JCImageViewerController.m in Sources */,
-				F55D55F61CB91E560070362B /* JCImageViewerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +318,7 @@
 		};
 		22506BAB1CB60049009993C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2D484340EBD4C5CBC4CD87 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JCImageViewerDemo/Info.plist;
@@ -349,6 +331,7 @@
 		};
 		22506BAC1CB60049009993C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D93E822180019BAD3D7D490C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JCImageViewerDemo/Info.plist;
