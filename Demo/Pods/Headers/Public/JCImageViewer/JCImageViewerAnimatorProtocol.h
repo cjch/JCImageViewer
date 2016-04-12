@@ -1,1 +1,0 @@
-../../../JCImageViewer/JCImageViewer/JCImageViewer/ImageViewerAnimator/JCImageViewerAnimatorProtocol.h

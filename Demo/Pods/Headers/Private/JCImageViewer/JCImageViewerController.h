@@ -1,1 +1,0 @@
-../../../JCImageViewer/JCImageViewer/JCImageViewer/ImageViewer/JCImageViewerController.h
