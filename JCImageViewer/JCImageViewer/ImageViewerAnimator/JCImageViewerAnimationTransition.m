@@ -52,6 +52,9 @@
         backgroundView.alpha = 0;
     }
     
+    fromImageView.hidden = YES;
+    toImageView.hidden = YES;
+    
     CGFloat duration = [self transitionDuration:transitionContext];
     [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         toView.alpha = 1;
@@ -64,6 +67,9 @@
     } completion:^(BOOL finished) {
         [phImageView removeFromSuperview];
         [backgroundView removeFromSuperview];
+        
+        fromImageView.hidden = NO;
+        toImageView.hidden = NO;
         
         BOOL isCancelled = [transitionContext transitionWasCancelled];
         [transitionContext completeTransition:!isCancelled];
