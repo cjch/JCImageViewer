@@ -91,6 +91,13 @@
     }
 }
 
+- (void)setCurrentIndex:(int)currentIndex {
+    _currentIndex = currentIndex;
+    if (self.viewerDelegate && [self.viewerDelegate respondsToSelector:@selector(imageViewer:didShowImageAtIndex:)]) {
+        [self.viewerDelegate imageViewer:self didShowImageAtIndex:currentIndex];
+    }
+}
+
 #pragma mark - load image
 - (void)loadImageWithIndex:(int)index {
     JCImageZoomingView *view = [self imageZoomingViewWithIndex:index];

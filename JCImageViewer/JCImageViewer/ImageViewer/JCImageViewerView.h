@@ -18,9 +18,17 @@
 
 @end
 
+@protocol JCImageViewerDelegate <NSObject>
+
+@optional
+- (void)imageViewer:(JCImageViewerView *)viewer didShowImageAtIndex:(int)index;
+
+@end
+
 @interface JCImageViewerView : UIScrollView
 
 @property (nonatomic, weak) id<JCImageViewerDataSource> dataSource;
+@property (nonatomic, weak) id<JCImageViewerDelegate> viewerDelegate;
 @property (nonatomic, assign) int currentIndex;
 
 - (void)showViewWithIndex:(int)showIndex;

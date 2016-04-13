@@ -13,11 +13,12 @@
 #import "JCImageViewerAnimatorProtocol.h"
 #import "JCViewerControllerAnimatorResponse.h"
 
-@interface JCImageViewerController () <JCImageViewerDataSource, JCImageViewerAnimatorProtocol>
+@interface JCImageViewerController () <JCImageViewerDataSource, JCImageViewerDelegate, JCImageViewerAnimatorProtocol>
 
 @property (nonatomic, strong) JCImageViewerView *viewer;
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, assign) int defalultShowIndex;
+@property (nonatomic, strong) UILabel *infoLabel;
 
 @property (nonatomic, strong) JCViewerControllerAnimatorResponse *animatorResponse;
 
@@ -39,6 +40,7 @@
     [self.view addSubview:self.viewer];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     [self.view insertSubview:imageView belowSubview:self.viewer];
+    [self.view addSubview:self.infoLabel];
     
     _animatorResponse = [JCViewerControllerAnimatorResponse new];
     _animatorResponse.defaultView = imageView;
@@ -67,6 +69,11 @@
     return entity;
 }
 
+#pragma mark - JCImageViewerDelegate
+- (void)imageViewer:(JCImageViewerView *)viewer didShowImageAtIndex:(int)index {
+    self.infoLabel.text = [NSString stringWithFormat:@"%d/%lu", index + 1, (unsigned long)self.dataArray.count];
+}
+
 #pragma mark - JCImageViewerAnimatorProtocol
 - (id<JCIVAnimatorResponseProtocol>)imageViewerAnimatorResponse {
     return self.animatorResponse;
@@ -77,8 +84,20 @@
     if (!_viewer) {
         _viewer = [[JCImageViewerView alloc] initWithFrame:self.view.bounds];
         _viewer.dataSource = self;
+        _viewer.viewerDelegate = self;
     }
     return _viewer;
+}
+
+- (UILabel *)infoLabel {
+    if (!_infoLabel) {
+        _infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 44, self.view.bounds.size.width, 44)];
+        _infoLabel.backgroundColor = [UIColor clearColor];
+        _infoLabel.font = [UIFont systemFontOfSize:16];
+        _infoLabel.textColor = [UIColor whiteColor];
+        _infoLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    return _infoLabel;
 }
 
 @end
