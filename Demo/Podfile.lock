@@ -1,10 +1,10 @@
 PODS:
-  - JCImageViewer (1.0.1)
+  - JCImageViewer (1.0.2)
 
 DEPENDENCIES:
-  - JCImageViewer (~> 1.0.1)
+  - JCImageViewer (~> 1.0.2)
 
 SPEC CHECKSUMS:
-  JCImageViewer: 349e47c1afa5945a64845408d0bfe1c5382d5448
+  JCImageViewer: 70fcefbfd007862972ba6f060ebddbba86529510
 
 COCOAPODS: 0.38.2
